@@ -12,12 +12,9 @@ yarn install
 ## Build
 
 ```bash
-# start mysql and mongodb docker container
-yarn start-db 
-
 # compile typescript
 yarn build
 
-# start express server
-yarn start
+# start mysql, mongodb, and app docker container
+yarn start-db 
 ```
