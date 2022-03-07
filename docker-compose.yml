@@ -23,6 +23,12 @@ services:
     image: node:16
     working_dir: /workspace
     command: yarn start
+    environment:
+      MONGO_HOST: mongodb://mongo:27017
+      DB_PASSWORD: mongoose
+      DB_USER: root
+      DB_HOST: mysql
+      DB_NAME: library
     ports:
       - '8080:8080'
     volumes:
